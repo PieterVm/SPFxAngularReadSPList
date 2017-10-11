@@ -9,9 +9,9 @@ export class MockItemsService implements IItemsService {
   public async getItems(): Promise<ItemModel[]> {
     return new Promise<ItemModel[]>((resolve, reject) => {
       const items: ItemModel[] = [
-        { Title: "Mauris", Picture: {Url: "www.picture.be"}, Link: "www.google.be" },
-        { Title: "Sed", Picture : {Url: "www.picture.be"}, Link: "www.google.be" },
-        { Title: "Quisque", Picture: {Url: "www.picture.be"}, Link: "www.google.be" }
+        { Title: "Mauris", Picture: {Url: "http://fakeimg.pl/300"}, Link: {Url: "www.google.be"} },
+        { Title: "Sed", Picture : {Url: "http://fakeimg.pl/300"}, Link: {Url: "www.google.be"} },
+        { Title: "Quisque", Picture: {Url: "http://fakeimg.pl/300"}, Link: {Url: "www.google.be"}}
       ];
 
       setTimeout(() => {
